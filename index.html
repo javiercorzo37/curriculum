@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio/CV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- MENU -->
+    
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Javi</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+        <!-- INICIO -->
+
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="./img/20210710_140718.jpg" alt="miFoto">
+                </div>
+                <h1>Cesar Javier Corzo</h1>
+                <h2>Programador Web</h2>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+
+    <!-- SOBRE MI -->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Javi Corzo.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur commodi magni animi possimus alias? Totam, assumenda qui, voluptas soluta eum explicabo, at fugiat dolorem maiores cupiditate atque accusamus veritatis?.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            351-3044543
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            corzojavier37@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Grecia 39, Malagueño, Córdoba
+                        </li>
+
+                    </ul>
+                    <button>
+                        <a download="Curriculum-Javi" href="./Curriculum/CV-Cesar Javier Corzo.pdf" target="_blank">Descargar CV</a><i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+        <!-- SKILLS -->
+
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Habilidades</h2>
+                <div class="fila">
+
+                    <!-- Technical Skill -->
+
+                    <div class="col">
+                        <h3>Habilidades técnicas</h3>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Wordpress</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Professional Skills -->
+
+                    <div class="col">
+                        <h3>Professional Skills</h3>
+                        <div class="skill">
+                            <span>Comunicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Creatividad</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CURRICULUM -->
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Facturación médica</h4>
+                        <span class="casa">Fundaes</span>
+                        <span class="fecha">2019 - 2019</span>
+                        <p>Facturación de todos los tipo de atenciones médicas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo Web</h4>
+                        <span class="casa">CoderHouse</span>
+                        <span class="fecha">2021 - 2021</span>
+                        <p>Los temas vistos fueron HTML,CSS y Sass</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Javascript</h4>
+                        <span class="casa">CoderHouse</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Javascript, POO, JQuery</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programación Full Stack</h4>
+                        <span class="casa">ISPC</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Cursando la tecnicatura de Full Stack y Desarrollo de aplicaciones</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Asesor Digital</h4>
+                        <span class="casa">Aegis Global</span>
+                        <span class="fecha">2016 - 2017</span>
+                        <p>Atención de clientes a través de los canales virtuales de Claro Sms, mail, Facebook, Twitter y Pagina Oficial.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operador</h4>
+                        <span class="casa">Emi Emergencias</span>
+                        <span class="fecha">2017 - Actualidad</span>
+                        <p>Mi primer puesto fue en el Call Center atendiendo llamadas de para el envío de medico a domicilio, emergencias y traslados de pacientes. Actualmente me desempeño en el sector de traslados de rehabilitación de la provincia de Córdoba.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+
+                <!-- Formulario -->
+
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+<script src="./script/main.js"></script>
+</body>
+</html>
